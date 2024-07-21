@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h2>{{ __('Register') }}</h2>
+    <h2>{{ __('messages.Register') }}</h2>
 
     <div class="mb-3">
         <a href="{{ route('register', ['lang' => 'en']) }}" class="btn btn-secondary">{{ __('English') }}</a>
@@ -34,22 +34,22 @@
     <form method="POST" action="{{ route('register', ['lang' => $lang]) }}" novalidate>
         @csrf
         <div class="mb-3">
-            <label for="name" class="form-label">{{ __('Name') }}</label>
+            <label for="name" class="form-label">{{ __('messages.Name') }}</label>
             <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label">{{ __('Email address') }}</label>
+            <label for="email" class="form-label">{{ __('messages.Email address') }}</label>
             <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}">
         </div>
         <div class="mb-3">
-            <label for="password" class="form-label">{{ __('Password') }}</label>
+            <label for="password" class="form-label">{{ __('messages.Password') }}</label>
             <input type="password" class="form-control" id="password" name="password">
         </div>
         <div class="mb-3">
-            <label for="password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
+            <label for="password_confirmation" class="form-label">{{ __('messages.Confirm Password') }}</label>
             <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
         </div>
-        <button type="submit" class="btn btn-primary">{{ __('Register') }}</button>
+        <button type="submit" class="btn btn-primary">{{ __('messages.Register') }}</button>
     </form>
 </div>
 
